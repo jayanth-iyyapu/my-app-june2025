@@ -8,6 +8,7 @@ import { ClockComponent } from './clock/clock.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { EmployeeDataComponent } from './employee-data/employee-data.component';
 
 const routes: Routes = [
   {path:'',component:LoginComponent},   //Default Routing (emptly leaving the path)
@@ -16,7 +17,8 @@ const routes: Routes = [
     {path:'clock',component:ClockComponent},
     {path:'calculator',component:CalculatorComponent},
     {path:'databinding',component:DatabindingComponent},
-    {path:'directives',component:DirectivesComponent}
+    {path:'directives',component:DirectivesComponent},
+    {path:'employee-data',component:EmployeeDataComponent}
   ]}, //Parent Routing (giving some content in path)
   {path:'**',component:ErrorComponent}
 ];

@@ -12,6 +12,7 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { FormsModule } from '@angular/forms';
 import { DirectivesComponent } from './directives/directives.component';
+import { EmployeeDataComponent } from './employee-data/employee-data.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { DirectivesComponent } from './directives/directives.component';
     ClockComponent,
     CalculatorComponent,
     DatabindingComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    EmployeeDataComponent
   ],
   imports: [
     BrowserModule,
