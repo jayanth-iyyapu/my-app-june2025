@@ -13,7 +13,7 @@ export class DirectivesComponent {
   age:number=0;
 
   products:any[]=[
-    {productName:'Tv one',price:14000,rating:1.9},
+    {productName:'Tv',price:14000,rating:1.9},
     {productName:'AC',price:45000,rating:3.9},
     {productName:'Parker pen',price:500,rating:1.6},
     {productName:'Laptop',price:150000,rating:4.0},

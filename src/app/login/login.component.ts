@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+   ispresrent:boolean=false;
+  show(){
+    console.log(this.ispresrent);
+    this.ispresrent=!this.ispresrent;
+    console.log(this.ispresrent);
+    
+  }
+
 
 }
