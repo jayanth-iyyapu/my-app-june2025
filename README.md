@@ -67,3 +67,7 @@ routing | http  | Rxjs | forms |-------- Communication
         |       |      |       |   
 --------------------------------
          architecture
+
+
+
+Directives: used to alter DOM
