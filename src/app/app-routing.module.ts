@@ -1,7 +1,25 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { LoginComponent } from './login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { HomeComponent } from './home/home.component';
+import { ErrorComponent } from './error/error.component';
+import { ClockComponent } from './clock/clock.component';
+import { CalculatorComponent } from './calculator/calculator.component';
+import { DatabindingComponent } from './databinding/databinding.component';
+import { DirectivesComponent } from './directives/directives.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path:'',component:LoginComponent},   //Default Routing (emptly leaving the path)
+  {path:'dashboard',component:DashboardComponent,children:[
+    {path:'home',component:HomeComponent}, //Child Routing
+    {path:'clock',component:ClockComponent},
+    {path:'calculator',component:CalculatorComponent},
+    {path:'databinding',component:DatabindingComponent},
+    {path:'directives',component:DirectivesComponent}
+  ]}, //Parent Routing (giving some content in path)
+  {path:'**',component:ErrorComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

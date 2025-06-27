@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    overflow: hidden;
+    margin: 0px;
+}
+.parent{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(204, 204, 45);
+    display: flex;
+}
+.left{
+    height: 100%;
+    width: 20%;
+    background-color: rgb(165, 115, 107);
+    overflow: auto;
+}
+.right{
+    height: 100%;
+    width: 80%;
+    background-color: rgb(58, 153, 71);
+    overflow: auto;
+}
+.calc{
+    height: 50%;
+    width: 40%;
+    background-color: rgb(5, 49, 85);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 140px 300px;
+}
+input{
+    margin-top: 10px;
+}
+button{
+    background-color: beige;
+    height: 25px;
+    width: 50px;
+    color: black;
+}

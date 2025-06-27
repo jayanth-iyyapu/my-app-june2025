@@ -26,6 +26,9 @@ check:
     --> run command "set-ExecutionPolicy Unrestricted"
 
 
+
+
+
 Git:
 ====
 1) Git Installation
@@ -47,3 +50,20 @@ Git:
   -> git commit -m "commit message"
   ->git push
        ->git push --set-upstream origin master -f(for the 1st time)
+
+
+
+
+Topics:
+=======
+
+Project Hierarchy:  
+==================
+
+             cli
+--------------------------------
+        |       |      |       |
+routing | http  | Rxjs | forms |-------- Communication
+        |       |      |       |   
+--------------------------------
+         architecture
