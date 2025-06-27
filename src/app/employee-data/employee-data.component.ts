@@ -48,4 +48,20 @@ totalcost(){
   alert(totalcost);
 }
 
+empName:string='';
+empExp:number=0;
+empPack:number=0;
+empRole:string='';
+add(){
+  let user={
+    name:this.empName,
+    experience:this.empExp,
+    package:this.empPack,
+    role:this.empRole
+  };
+  console.log(user);
+  this.employees.unshift(user);
+}
+
+
 }
