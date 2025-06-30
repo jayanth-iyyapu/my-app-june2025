@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-employee-data',
   templateUrl: './employee-data.component.html',
-  styleUrls: ['./employee-data.component.css']
+  styleUrls: ['./employee-data.component.css'],
 })
 export class EmployeeDataComponent {
   employees: any = [
@@ -17,51 +17,56 @@ export class EmployeeDataComponent {
     { name: 'john', experience: 3, package: 700000, role: 'Data engineer' },
     { name: 'david', experience: 2, package: 400000, role: 'Data engineer' },
     { name: 'smith', experience: 1, package: 300000, role: 'Testing Engineer' },
-    { name: 'sujith', experience: 3.5, package: 350000, role: 'Testing Engineer' },
-  ];
-delete(index:number){
-  this.employees.splice(index,1);
-}
-sort(){
-  this.employees.sort((a:any,b:any)=>a.experience-b.experience)
-}
+    { name: 'sujith', experience: 3.5, package: 350000, role: 'Testing Engineer' },
+  ];
+  delete(index: number) {
+    this.employees.splice(index, 1);
+  }
+  sort() {
+    this.employees.sort((a: any, b: any) => a.experience - b.experience);
+  }
 
-role:string='';
-roleFilter(){
-  this.employees=this.employees.filter((employee:any)=>employee.role==this.role);
-}
+  role: string = '';
+  roleFilter() {
+    this.employees = this.employees.filter(
+      (employee: any) => employee.role == this.role
+    );
+  }
 
-filterData:string='';
-search(){
-this.employees=this.employees.filter((employee:any)=>employee.name.includes(this.filterData));
-}
+  filterData: string = '';
+  search() {
+    this.employees = this.employees.filter((employee: any) =>
+      employee.name.includes(this.filterData)
+    );
+  }
 
-bonus(){
-  this.employees=this.employees.map((employee:any)=>{
-    employee.package= employee.package+50000;
-    return employee;
-  });
-}
+  bonus() {
+    this.employees = this.employees.map((employee: any) => {
+      employee.package = employee.package + 50000;
+      return employee;
+    });
+  }
 
-totalcost(){
-  let totalcost=this.employees.reduce((sum:any,employee:any)=>sum+employee.package,0);
-  alert(totalcost);
-}
+  totalcost() {
+    let totalcost = this.employees.reduce(
+      (sum: any, employee: any) => sum + employee.package,
+      0
+    );
+    alert(totalcost);
+  }
 
-empName:string='';
-empExp:number=0;
-empPack:number=0;
-empRole:string='';
-add(){
-  let user={
-    name:this.empName,
-    experience:this.empExp,
-    package:this.empPack,
-    role:this.empRole
-  };
-  console.log(user);
-  this.employees.unshift(user);
-}
-
-
+  empName: string = '';
+  empExp: number = 0;
+  empPack: number = 0;
+  empRole: string = '';
+  add() {
+    let user = {
+      name: this.empName,
+      experience: this.empExp,
+      package: this.empPack,
+      role: this.empRole,
+    };
+    console.log(user);
+    this.employees.unshift(user);
+  }
 }

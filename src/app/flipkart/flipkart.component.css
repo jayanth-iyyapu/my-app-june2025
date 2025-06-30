@@ -1,0 +1,16 @@
+.parent{
+    width: 100vw;
+    display: flex;
+}
+.left{
+    margin: 0px;
+}
+button{
+margin: 5px;
+}
+input{
+    margin: 5px;
+}
+h1{
+    text-align: center;
+}

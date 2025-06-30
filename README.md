@@ -13,7 +13,7 @@ check:
 3) Angular Application
    --> move to the desired path/location
        cd desktop
-   --> nr new my-app
+   --> ng new my-app
        routing-yes
        css
 

@@ -13,6 +13,12 @@ import { DatabindingComponent } from './databinding/databinding.component';
 import { FormsModule } from '@angular/forms';
 import { DirectivesComponent } from './directives/directives.component';
 import { EmployeeDataComponent } from './employee-data/employee-data.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
+import { VehiclesComponent } from './vehicles/vehicles.component';
+import { HttpClientModule } from '@angular/common/http';
+import { OnlineshoppingComponent } from './onlineshopping/onlineshopping.component';
+import { MailComponent } from './mail/mail.component';
+
 
 @NgModule({
   declarations: [
@@ -25,12 +31,17 @@ import { EmployeeDataComponent } from './employee-data/employee-data.component';
     CalculatorComponent,
     DatabindingComponent,
     DirectivesComponent,
-    EmployeeDataComponent
+    EmployeeDataComponent,
+    FlipkartComponent,
+    VehiclesComponent,
+    OnlineshoppingComponent,
+    MailComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

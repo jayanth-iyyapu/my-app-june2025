@@ -9,6 +9,10 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { EmployeeDataComponent } from './employee-data/employee-data.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
+import { VehiclesComponent } from './vehicles/vehicles.component';
+import { OnlineshoppingComponent } from './onlineshopping/onlineshopping.component';
+import { MailComponent } from './mail/mail.component';
 
 const routes: Routes = [
   {path:'',component:LoginComponent},   //Default Routing (emptly leaving the path)
@@ -18,7 +22,11 @@ const routes: Routes = [
     {path:'calculator',component:CalculatorComponent},
     {path:'databinding',component:DatabindingComponent},
     {path:'directives',component:DirectivesComponent},
-    {path:'employee-data',component:EmployeeDataComponent}
+    {path:'employee-data',component:EmployeeDataComponent},
+    {path:'flipkart',component:FlipkartComponent},
+    {path:'vehicles',component:VehiclesComponent},
+    {path:'onlineshopping',component:OnlineshoppingComponent},
+    {path:'mail',component:MailComponent}
   ]}, //Parent Routing (giving some content in path)
   {path:'**',component:ErrorComponent}
 ];
