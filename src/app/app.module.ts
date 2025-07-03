@@ -10,7 +10,7 @@ import { ErrorComponent } from './error/error.component';
 import { ClockComponent } from './clock/clock.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { DatabindingComponent } from './databinding/databinding.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DirectivesComponent } from './directives/directives.component';
 import { EmployeeDataComponent } from './employee-data/employee-data.component';
 import { FlipkartComponent } from './flipkart/flipkart.component';
@@ -18,6 +18,10 @@ import { VehiclesComponent } from './vehicles/vehicles.component';
 import { HttpClientModule } from '@angular/common/http';
 import { OnlineshoppingComponent } from './onlineshopping/onlineshopping.component';
 import { MailComponent } from './mail/mail.component';
+import { CardComponent } from './card/card.component';
+import { WeatherComponent } from './weather/weather.component';
+import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+import { IdCardComponent } from './id-card/id-card.component';
 
 
 @NgModule({
@@ -35,13 +39,18 @@ import { MailComponent } from './mail/mail.component';
     FlipkartComponent,
     VehiclesComponent,
     OnlineshoppingComponent,
-    MailComponent
+    MailComponent,
+    CardComponent,
+    WeatherComponent,
+    CreateVehicleComponent,
+    IdCardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

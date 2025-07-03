@@ -62,18 +62,32 @@ this.products.sort((a:any,b:any)=>b.rating-a.rating);
 }
 
 discount(){
-
+this.products=this.products.map((product:any)=>{
+  product.price=product.price*0.5;
+  return product;
+})
 }
 
+
 deliveryCharge(){
+ this.products=this.products.map((product:any)=>{
+  if(!product.freeDelivery){
+  product.price=product.price+50
+  }
+  return product;
+ })
 
 }
 
 totalPrice(){
-
+let totalCost=this.products.reduce((sum:any,product:any)=>sum+product.price,0);
+alert(totalCost);
 }
 
 totalCart(){
+   let totalCart=this.products.push()
+      alert(totalCart);
 
 }
+
 }

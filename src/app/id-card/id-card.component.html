@@ -1,0 +1,34 @@
+<!-- <select [(ngModel)]="name">
+    <option>name</option>
+    <option>phone</option>
+    <option>city</option>
+    <option>dob</option>
+    <option>profile_pictutre</option>
+    <option>email</option>
+    <option>school_name</option>
+    <option>school_city</option>
+    <option>school_pin</option>
+</select>
+    <select [(ngModel)]="phone">
+        <option>asc</option>
+        <option>desc</option>
+    </select> 
+    <button (click)="sort()">Sort</button> -->
+
+    <input type="text" [(ngModel)]="term" (keyup)="search()">
+
+<div class="parent">
+    <div class="top" *ngFor="let card of cards">
+    <img src="{{card.school_logo}}" alt="" width="100px" height="100px">
+     <p><strong>Profile:</strong><img src={{card.profile_picture}} width="100px" height="100px"></p>
+    <p><strong>Name:</strong>{{card.name}}</p>
+    <p><strong> Card no:</strong>{{card.phone}}</p>
+    <p><strong>City:</strong>{{card.city}}</p>
+    <p><strong>DOB:</strong>{{card.dob}}</p>
+   
+    <p><strong>EMail:</strong>{{card.email}}</p>
+    <p><strong>School:</strong>{{card.school_name}}</p>
+    <p><strong>School city:</strong>{{card.school_city}}</p>
+    <p><strong>Pin:</strong>{{card.school_pin}}</p>
+    </div>>
+ </div>

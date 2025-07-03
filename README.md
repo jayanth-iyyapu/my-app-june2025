@@ -71,3 +71,38 @@ routing | http  | Rxjs | forms |-------- Communication
 
 
 Directives: used to alter DOM
+===========
+1) Structural Directives
+   *ngFor , *ngIf
+2) Attribute Directives
+   ngClass , ngStyle
+
+
+
+Pipes: used to alter Data Format
+======
+| uppercase
+| lowercase
+| date:'hh:MM:ss'
+| date:'hh:mm:ss'
+
+
+Possible API calls:
+===================
+1) get All          get      get(URL)
+2) get specific     get
+3) sorting          get
+4) filter           get
+5) pagintion        get
+
+6) post             create
+7) delete           delete
+8) put              update
+
+
+Angular Forms:
+==============
+1) Template Driven
+2) Rgiteactive Form
+
+

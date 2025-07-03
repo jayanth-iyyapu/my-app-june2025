@@ -1,0 +1,9 @@
+<div class="parent">
+    <div class="card" *ngFor="let cards of card">
+        <img src="{{cards.download_url}}" alt="" width="100%" height="100%">
+        <div class="a">
+            <p>{{cards.author}}</p>
+        <a href="{{cards.url}}" target="_blank" class="btn btn-outline-secondary">Download</a>
+        </div>
+    </div>
+</div>

@@ -13,6 +13,10 @@ import { FlipkartComponent } from './flipkart/flipkart.component';
 import { VehiclesComponent } from './vehicles/vehicles.component';
 import { OnlineshoppingComponent } from './onlineshopping/onlineshopping.component';
 import { MailComponent } from './mail/mail.component';
+import { CardComponent } from './card/card.component';
+import { WeatherComponent } from './weather/weather.component';
+import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+import { IdCardComponent } from './id-card/id-card.component';
 
 const routes: Routes = [
   {path:'',component:LoginComponent},   //Default Routing (emptly leaving the path)
@@ -26,7 +30,11 @@ const routes: Routes = [
     {path:'flipkart',component:FlipkartComponent},
     {path:'vehicles',component:VehiclesComponent},
     {path:'onlineshopping',component:OnlineshoppingComponent},
-    {path:'mail',component:MailComponent}
+    {path:'mail',component:MailComponent},
+    {path:'card',component:CardComponent},
+    {path:'weather',component:WeatherComponent},
+    {path:'create-vehicle',component:CreateVehicleComponent},
+    {path:'id-card',component:IdCardComponent}
   ]}, //Parent Routing (giving some content in path)
   {path:'**',component:ErrorComponent}
 ];
