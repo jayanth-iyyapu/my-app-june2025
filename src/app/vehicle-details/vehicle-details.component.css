@@ -1,0 +1,13 @@
+.vehicle{
+    height: 600px;
+    width: 500px;
+    background-color: aqua;
+    text-align: center;
+    margin-left: 25%;
+}
+img{
+    height: 200px;
+}
+p{
+    font-weight: 900;
+}

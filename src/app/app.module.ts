@@ -22,6 +22,10 @@ import { CardComponent } from './card/card.component';
 import { WeatherComponent } from './weather/weather.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 import { IdCardComponent } from './id-card/id-card.component';
+import { CreateStudentComponent } from './create-student/create-student.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { CreateIdcardComponent } from './create-idcard/create-idcard.component';
+import { IdcardDetailsComponent } from './idcard-details/idcard-details.component';
 
 
 @NgModule({
@@ -44,6 +48,10 @@ import { IdCardComponent } from './id-card/id-card.component';
     WeatherComponent,
     CreateVehicleComponent,
     IdCardComponent,
+    CreateStudentComponent,
+    VehicleDetailsComponent,
+    CreateIdcardComponent,
+    IdcardDetailsComponent,
   ],
   imports: [
     BrowserModule,

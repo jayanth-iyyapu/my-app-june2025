@@ -17,6 +17,10 @@ import { CardComponent } from './card/card.component';
 import { WeatherComponent } from './weather/weather.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 import { IdCardComponent } from './id-card/id-card.component';
+import { CreateStudentComponent } from './create-student/create-student.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { CreateIdcardComponent } from './create-idcard/create-idcard.component';
+import { IdcardDetailsComponent } from './idcard-details/idcard-details.component';
 
 const routes: Routes = [
   {path:'',component:LoginComponent},   //Default Routing (emptly leaving the path)
@@ -34,7 +38,15 @@ const routes: Routes = [
     {path:'card',component:CardComponent},
     {path:'weather',component:WeatherComponent},
     {path:'create-vehicle',component:CreateVehicleComponent},
-    {path:'id-card',component:IdCardComponent}
+    {path:'id-card',component:IdCardComponent},
+    {path:'create-idcard',component:CreateIdcardComponent},
+    {path:'edit-idcard/:id',component:CreateIdcardComponent},
+    {path:'create-student',component:CreateStudentComponent},
+    {path:'vehicle-details/:id',component:VehicleDetailsComponent},
+    {path:'edit-vehicle/:id',component:CreateVehicleComponent},
+    {path:'idcard-details/:id',component:IdcardDetailsComponent},
+
+
   ]}, //Parent Routing (giving some content in path)
   {path:'**',component:ErrorComponent}
 ];

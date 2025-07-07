@@ -11,7 +11,10 @@ export class IdCardComponent {
   cards:any[]=[]
 
   constructor(private _cardService:IdCardService){
-    _cardService.getidcard().subscribe(
+    this.loadcards();
+  }
+  loadcards(){
+     this._cardService.getidcard().subscribe(
       (data:any)=>{
         console.log(data);
         this.cards=data;
@@ -20,19 +23,6 @@ export class IdCardComponent {
       }
     )
   }
-
- 
-  //  name:string='';
-  // phone:number=0;
-  // sort(){
-  //   console.log(this.name,this.phone);
-  //   this._cardService.getidcard(this.name,this.phone).subscribe(
-  //     (data:any)=>{
-  //       console.log(data);
-  //       id
-  //     }
-  //   )
-  // }
 
    term:string='';
   search(){
@@ -45,5 +35,50 @@ export class IdCardComponent {
       }
     )
   }
+
+   column:string='';
+  order:string='';
+  sort(){
+    console.log(this.column,this.order);
+    this._cardService.getsortedidcard(this.column,this.order).subscribe(
+      (data:any)=>{
+        console.log(data);
+        this.cards=data;
+      },(err:any)=>{
+        alert('Internal Server Error'); 
+      }
+    )
+  }
+
+  items:any='';
+  page:any='';
+  pagination(){
+    console.log(this.items,this.page);
+    this._cardService.getPaginatedidcard(this.items,this.page).subscribe(
+      (data:any)=>{
+        console.log(data);
+        this.cards=data;
+     },(err:any)=>{
+      alert('Internal Server Error')
+     }
+    )
+  }
+
+  delete(id:any){
+  if(confirm('Are you sure to Delete')==true){
+  this._cardService.deleteCard(id).subscribe(
+     (data:any)=>{
+        alert("Record deleted successfully");
+        this.loadcards();
+      },(err:any)=>{
+        alert('Internal Server Error');
+      }
+  )
+  }else{
+    alert("You have Cancelled");
+  }
+}
+
+
   
 }

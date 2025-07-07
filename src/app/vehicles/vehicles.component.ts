@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { VehiclesService } from '../vehicles.service';
+import { ActivatedRoute } from '@angular/router';
+import { subscribeOn } from 'rxjs';
 
 @Component({
   selector: 'app-vehicles',
@@ -77,7 +79,6 @@ delete(id:any){
   }else{
     alert("You have Cancelled");
   }
-}
-  
+}  
 
 }
