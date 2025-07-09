@@ -28,6 +28,8 @@ import { CreateIdcardComponent } from './create-idcard/create-idcard.component';
 import { IdcardDetailsComponent } from './idcard-details/idcard-details.component';
 import { AccountsComponent } from './accounts/accounts.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 
 @NgModule({
@@ -56,6 +58,8 @@ import { RegistrationComponent } from './registration/registration.component';
     IdcardDetailsComponent,
     AccountsComponent,
     RegistrationComponent,
+    ParentComponent,
+    ChildComponent,
   ],
   imports: [
     BrowserModule,

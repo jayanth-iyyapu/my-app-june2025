@@ -24,6 +24,7 @@ import { IdcardDetailsComponent } from './idcard-details/idcard-details.componen
 import { AccountsComponent } from './accounts/accounts.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { AuthGuard } from './auth.guard';
+import { ParentComponent } from './parent/parent.component';
 
 const routes: Routes = [
   {path:'',component:LoginComponent},   //Default Routing (emptly leaving the path)
@@ -49,7 +50,8 @@ const routes: Routes = [
     {path:'vehicle-details/:id',component:VehicleDetailsComponent},
     {path:'edit-vehicle/:id',component:CreateVehicleComponent},
     {path:'idcard-details/:id',component:IdcardDetailsComponent},
-    {path:'accounts',component:AccountsComponent}
+    {path:'accounts',component:AccountsComponent},
+    {path:'parent',component:ParentComponent},
 
 
   ]}, //Parent Routing (giving some content in path)
