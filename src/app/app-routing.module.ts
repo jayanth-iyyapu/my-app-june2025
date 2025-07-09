@@ -21,10 +21,14 @@ import { CreateStudentComponent } from './create-student/create-student.componen
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { CreateIdcardComponent } from './create-idcard/create-idcard.component';
 import { IdcardDetailsComponent } from './idcard-details/idcard-details.component';
+import { AccountsComponent } from './accounts/accounts.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [
   {path:'',component:LoginComponent},   //Default Routing (emptly leaving the path)
-  {path:'dashboard',component:DashboardComponent,children:[
+  {path:'registration',component:RegistrationComponent},
+  {path:'dashboard',component:DashboardComponent,canActivate:[AuthGuard],children:[
     {path:'home',component:HomeComponent}, //Child Routing
     {path:'clock',component:ClockComponent},
     {path:'calculator',component:CalculatorComponent},
@@ -45,6 +49,7 @@ const routes: Routes = [
     {path:'vehicle-details/:id',component:VehicleDetailsComponent},
     {path:'edit-vehicle/:id',component:CreateVehicleComponent},
     {path:'idcard-details/:id',component:IdcardDetailsComponent},
+    {path:'accounts',component:AccountsComponent}
 
 
   ]}, //Parent Routing (giving some content in path)

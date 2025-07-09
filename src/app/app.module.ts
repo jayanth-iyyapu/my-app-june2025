@@ -26,6 +26,8 @@ import { CreateStudentComponent } from './create-student/create-student.componen
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { CreateIdcardComponent } from './create-idcard/create-idcard.component';
 import { IdcardDetailsComponent } from './idcard-details/idcard-details.component';
+import { AccountsComponent } from './accounts/accounts.component';
+import { RegistrationComponent } from './registration/registration.component';
 
 
 @NgModule({
@@ -52,6 +54,8 @@ import { IdcardDetailsComponent } from './idcard-details/idcard-details.componen
     VehicleDetailsComponent,
     CreateIdcardComponent,
     IdcardDetailsComponent,
+    AccountsComponent,
+    RegistrationComponent,
   ],
   imports: [
     BrowserModule,

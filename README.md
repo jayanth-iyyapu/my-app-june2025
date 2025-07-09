@@ -46,7 +46,7 @@ Git:
   ->git remote add origin url
        check: git remote -v
   -> Q-To stop the git
-  
+
   ->git status -----to check branch
   -> git add .
   -> git commit -m "commit message"
@@ -60,7 +60,9 @@ if anyone gives the code url to you
   ->npm install
   ->ng serve
 
-
+  ->git branch * master
+  -> git fetch
+  -> git checkout
 
 
 
@@ -106,7 +108,7 @@ Possible API calls:
 5) pagintion        get        get(url?limits=items&page=page)
 
 6) create           post       post(url,data)
-7) update           put
+7) update           put        put(url/id.data)
 8) delete           delete     delete(url/id)            
 
 

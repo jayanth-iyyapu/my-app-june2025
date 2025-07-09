@@ -1,25 +1,24 @@
 <!-- From Uiverse.io by nathann09 --> 
-
-    <form class="form">
+<h2>Login</h2>
+    <form class="form" [formGroup]="loginForm"> 
        <p class="form-title">Sign in to your account</p>
         <div class="input-container">
-          <input type="email" placeholder="Enter email">
+          <input type="email" placeholder="Enter email" formControlName="email">
           <span>
           </span>
       </div>
       <div class="input-container">
-          <input [type]="ispresrent?'tgitext':'password'" placeholder="Enter password">
+          <input [type]="ispresrent?'tgitext':'password'" placeholder="Enter password" formControlName="password">
         </div>
         <input type="checkbox" (click)="show()">
         <label>Show Password</label>
         
-         <button type="submit" class="submit">
-        Sign in
+         <button (click)="login()" class="btn btn-primary" > Login
       </button>
 
       <p class="signup-link">
         No account?
-        <a href="">Sign up</a>
+        <a routerLink="/registration">Registration</a>
       </p>
    </form>
 
