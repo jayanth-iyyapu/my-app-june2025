@@ -151,5 +151,5 @@ customs:
    ---- we have to insert data in array of objects  [{data.json}]
    ---- assign this path to the vehicle.service.ts= "apiUrl:srting='/assets/data.json'
  
-6) Custom Command
+6) Custom Command----->altering the names in package.json to run the serve
 7) Interceptor----->ng generate interceptor auth
