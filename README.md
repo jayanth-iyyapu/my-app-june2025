@@ -138,3 +138,18 @@ CONTROLS:
 1) Form Group : studentForm.get('name')
 2) Nested Form Group : studentForm.get
 3) Form Array : cardsFormArray.controls[i]?.get('cvv')
+
+
+customs:
+========
+1) Custom Directives----> ng generate directive capital
+2) Custom Pipes---->ng generate pipe rupee
+3) Custom Datatypes--Interface--Model----->ng generate interface user
+4) Custom Validators
+5) Custom API / Dummy JSON
+   ---- create a file name with 'data.json' in assests
+   ---- we have to insert data in array of objects  [{data.json}]
+   ---- assign this path to the vehicle.service.ts= "apiUrl:srting='/assets/data.json'
+ 
+6) Custom Command----->altering the names in package.json to run the serve
+7) Interceptor----->ng generate interceptor auth
