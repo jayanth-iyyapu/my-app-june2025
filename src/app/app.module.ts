@@ -34,10 +34,10 @@ import { Sibling1Component } from './sibling1/sibling1.component';
 import { Sibling2Component } from './sibling2/sibling2.component';
 import { RatingComponent } from './rating/rating.component';
 import { TextareaComponent } from './textarea/textarea.component';
+import { AboutUsModule } from './about-us/about-us.module';
 import { CapitalDirective } from './capital.directive';
 import { RupeePipe } from './rupee.pipe';
 import { AuthInterceptor } from './auth.interceptor';
-
 
 @NgModule({
   declarations: [
@@ -73,7 +73,6 @@ import { AuthInterceptor } from './auth.interceptor';
     TextareaComponent,
     CapitalDirective,
     RupeePipe,
-  
   ],
   imports: [
     BrowserModule,
@@ -81,6 +80,7 @@ import { AuthInterceptor } from './auth.interceptor';
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
+    AboutUsModule
   ],
   providers: [
     {
