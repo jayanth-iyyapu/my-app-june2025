@@ -28,6 +28,12 @@ import { CreateIdcardComponent } from './create-idcard/create-idcard.component';
 import { IdcardDetailsComponent } from './idcard-details/idcard-details.component';
 import { AccountsComponent } from './accounts/accounts.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { Sibling1Component } from './sibling1/sibling1.component';
+import { Sibling2Component } from './sibling2/sibling2.component';
+import { RatingComponent } from './rating/rating.component';
+import { TextareaComponent } from './textarea/textarea.component';
 
 
 @NgModule({
@@ -56,6 +62,12 @@ import { RegistrationComponent } from './registration/registration.component';
     IdcardDetailsComponent,
     AccountsComponent,
     RegistrationComponent,
+    ParentComponent,
+    ChildComponent,
+    Sibling1Component,
+    Sibling2Component,
+    RatingComponent,
+    TextareaComponent,
   ],
   imports: [
     BrowserModule,
