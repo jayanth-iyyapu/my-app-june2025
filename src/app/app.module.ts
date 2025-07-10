@@ -34,6 +34,7 @@ import { Sibling1Component } from './sibling1/sibling1.component';
 import { Sibling2Component } from './sibling2/sibling2.component';
 import { RatingComponent } from './rating/rating.component';
 import { TextareaComponent } from './textarea/textarea.component';
+import { AboutUsModule } from './about-us/about-us.module';
 
 
 @NgModule({
