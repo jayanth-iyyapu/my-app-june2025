@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { OnlineshoppingService } from '../onlineshopping.service';
 
 @Component({
@@ -7,6 +7,7 @@ import { OnlineshoppingService } from '../onlineshopping.service';
   styleUrls: ['./onlineshopping.component.css']
 })
 export class OnlineshoppingComponent {
+
   onlineshopping:any[]=[]
 
   constructor(private _onlineShopping:OnlineshoppingService){

@@ -48,7 +48,7 @@
             <td>{{i+1}}</td>
             <td>{{product.name}}</td>
             <td>{{product.price}}</td>
-            <td>{{product.rating}}</td>
+            <td><app-rating [rating]="product.rating"></app-rating></td>
             <td>{{product.freeDelivery}}</td>
             <td><button (click)="delete(i)" class="btn btn-danger">Delete</button></td>
         </tr>

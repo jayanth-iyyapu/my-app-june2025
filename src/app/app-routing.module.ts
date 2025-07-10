@@ -25,6 +25,8 @@ import { AccountsComponent } from './accounts/accounts.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { AuthGuard } from './auth.guard';
 import { ParentComponent } from './parent/parent.component';
+import { Sibling1Component } from './sibling1/sibling1.component';
+import { TextareaComponent } from './textarea/textarea.component';
 
 const routes: Routes = [
   {path:'',component:LoginComponent},   //Default Routing (emptly leaving the path)
@@ -52,6 +54,8 @@ const routes: Routes = [
     {path:'idcard-details/:id',component:IdcardDetailsComponent},
     {path:'accounts',component:AccountsComponent},
     {path:'parent',component:ParentComponent},
+    {path:'sibling1',component:Sibling1Component},
+
 
 
   ]}, //Parent Routing (giving some content in path)
