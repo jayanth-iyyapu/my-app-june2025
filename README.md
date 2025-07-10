@@ -142,10 +142,14 @@ CONTROLS:
 
 customs:
 ========
-1) Custom Directives----> ng generate directive name
-2) Custom Pipes
-3) Custom Datatypes--Interface--Model----->ng generate interface
-4) Custom Validator
+1) Custom Directives----> ng generate directive capital
+2) Custom Pipes---->ng generate pipe rupee
+3) Custom Datatypes--Interface--Model----->ng generate interface user
+4) Custom Validators
 5) Custom API / Dummy JSON
+   ---- create a file name with 'data.json' in assests
+   ---- we have to insert data in array of objects  [{data.json}]
+   ---- assign this path to the vehicle.service.ts= "apiUrl:srting='/assets/data.json'
+ 
 6) Custom Command
-7) Interceptor
+7) Interceptor----->ng generate interceptor auth

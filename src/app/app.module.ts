@@ -15,7 +15,7 @@ import { DirectivesComponent } from './directives/directives.component';
 import { EmployeeDataComponent } from './employee-data/employee-data.component';
 import { FlipkartComponent } from './flipkart/flipkart.component';
 import { VehiclesComponent } from './vehicles/vehicles.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { OnlineshoppingComponent } from './onlineshopping/onlineshopping.component';
 import { MailComponent } from './mail/mail.component';
 import { CardComponent } from './card/card.component';
@@ -36,6 +36,7 @@ import { RatingComponent } from './rating/rating.component';
 import { TextareaComponent } from './textarea/textarea.component';
 import { CapitalDirective } from './capital.directive';
 import { RupeePipe } from './rupee.pipe';
+import { AuthInterceptor } from './auth.interceptor';
 
 
 @NgModule({
@@ -81,7 +82,13 @@ import { RupeePipe } from './rupee.pipe';
     HttpClientModule,
     ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide:HTTP_INTERCEPTORS,
+      useClass:AuthInterceptor,
+      multi:true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
