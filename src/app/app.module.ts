@@ -34,6 +34,8 @@ import { Sibling1Component } from './sibling1/sibling1.component';
 import { Sibling2Component } from './sibling2/sibling2.component';
 import { RatingComponent } from './rating/rating.component';
 import { TextareaComponent } from './textarea/textarea.component';
+import { CapitalDirective } from './capital.directive';
+import { RupeePipe } from './rupee.pipe';
 
 
 @NgModule({
@@ -68,6 +70,9 @@ import { TextareaComponent } from './textarea/textarea.component';
     Sibling2Component,
     RatingComponent,
     TextareaComponent,
+    CapitalDirective,
+    RupeePipe,
+  
   ],
   imports: [
     BrowserModule,

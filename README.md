@@ -138,3 +138,14 @@ CONTROLS:
 1) Form Group : studentForm.get('name')
 2) Nested Form Group : studentForm.get
 3) Form Array : cardsFormArray.controls[i]?.get('cvv')
+
+
+customs:
+========
+1) Custom Directives----> ng generate directive name
+2) Custom Pipes
+3) Custom Datatypes--Interface--Model----->ng generate interface
+4) Custom Validator
+5) Custom API / Dummy JSON
+6) Custom Command
+7) Interceptor
