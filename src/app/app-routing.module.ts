@@ -55,6 +55,7 @@ const routes: Routes = [
     {path:'accounts',component:AccountsComponent},
     {path:'parent',component:ParentComponent},
     {path:'sibling1',component:Sibling1Component},
+    {path:'accounts',component:AccountsComponent},
 
 
 
