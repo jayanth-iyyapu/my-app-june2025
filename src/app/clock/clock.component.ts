@@ -13,4 +13,10 @@ user:User={
   email:'jay123@gmail.com',
   age:25
 }
+
+print:number=0;
+click(){
+console.log(this.print++);
+}
+
 }

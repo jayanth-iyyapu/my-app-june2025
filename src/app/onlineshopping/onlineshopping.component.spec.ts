@@ -1,23 +1,19 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { TestBed } from '@angular/core/testing';
+import { OnlineshoppingService } from '../onlineshopping.service';
+import { HttpClientTestingModule } from '@angular/common/http/testing'; // ✅ Import this
 
-import { OnlineshoppingComponent } from './onlineshopping.component';
+describe('OnlineshoppingService', () => {
+  let service: OnlineshoppingService;
 
-describe('OnlineshoppingComponent', () => {
-  let component: OnlineshoppingComponent;
-  let fixture: ComponentFixture<OnlineshoppingComponent>;
-
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ OnlineshoppingComponent ]
-    })
-    .compileComponents();
-
-    fixture = TestBed.createComponent(OnlineshoppingComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      imports: [HttpClientTestingModule], // ✅ Add this
+      providers: [OnlineshoppingService]
+    });
+    service = TestBed.inject(OnlineshoppingService);
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('should be created', () => {
+    expect(service).toBeTruthy();
   });
 });

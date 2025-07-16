@@ -38,6 +38,7 @@ import { AboutUsModule } from './about-us/about-us.module';
 import { CapitalDirective } from './capital.directive';
 import { RupeePipe } from './rupee.pipe';
 import { AuthInterceptor } from './auth.interceptor';
+import { HooksComponent } from './hooks/hooks.component';
 
 @NgModule({
   declarations: [
@@ -73,6 +74,7 @@ import { AuthInterceptor } from './auth.interceptor';
     TextareaComponent,
     CapitalDirective,
     RupeePipe,
+    HooksComponent,
   ],
   imports: [
     BrowserModule,

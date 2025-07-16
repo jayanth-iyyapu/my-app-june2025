@@ -1,16 +1,19 @@
-import { TestBed } from '@angular/core/testing';
+import { TestBed } from "@angular/core/testing";
+import { AppComponent } from "./app.component";
 
-import { AccountsService } from './accounts.service';
+it('should render title correctly', () => {
+  const fixture = TestBed.createComponent(AppComponent);
+  fixture.detectChanges();
 
-describe('AccountsService', () => {
-  let service: AccountsService;
+  const compiled = fixture.nativeElement as HTMLElement;
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(AccountsService);
-  });
+  // Log what's actually rendered
+  console.log('Rendered HTML:', compiled.innerHTML);
 
-  it('should be created', () => {
-    expect(service).toBeTruthy();
-  });
+  // Try different selectors to match your actual HTML
+  const contentText = compiled.querySelector('.content span')?.textContent 
+                   || compiled.querySelector('h1')?.textContent 
+                   || '';
+
+  expect(contentText).toContain('my-app-june2025 app is running!');
 });

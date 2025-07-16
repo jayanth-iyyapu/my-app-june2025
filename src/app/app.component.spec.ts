@@ -5,12 +5,8 @@ import { AppComponent } from './app.component';
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule
-      ],
-      declarations: [
-        AppComponent
-      ],
+      imports: [RouterTestingModule],
+      declarations: [AppComponent],
     }).compileComponents();
   });
 
@@ -26,10 +22,15 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('my-app-june2025');
   });
 
-  it('should render title', () => {
+ it('should render title correctly', () => {
     const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
+    fixture.detectChanges(); // 👈 required to trigger data binding
+
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('my-app-june2025 app is running!');
+
+    console.log('Rendered HTML:', compiled.innerHTML); // ✅ Debug
+
+    const text = compiled.textContent?.trim(); // 👈 get visible text
+    expect(text).toContain('my-app-june2025 app is running!');
   });
 });

@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { FormsModule } from '@angular/forms'; // ✅ Add this
 import { DatabindingComponent } from './databinding.component';
 
 describe('DatabindingComponent', () => {
@@ -8,9 +8,9 @@ describe('DatabindingComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DatabindingComponent ]
-    })
-    .compileComponents();
+      declarations: [DatabindingComponent],
+      imports: [FormsModule] // ✅ Required for [(ngModel)]
+    }).compileComponents();
 
     fixture = TestBed.createComponent(DatabindingComponent);
     component = fixture.componentInstance;
