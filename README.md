@@ -54,15 +54,55 @@ Git:
        ->git push --set-upstream origin master -f(for the 1st time)
 
 
-if anyone gives the code url to you
+4) Branching
+  -> create a branch in github
+  -> git fetch
+  -> git checkout
+   check:
+       ->git branch
+
+       if anyone gives the code url to you
   ->git clone url
   ->cd url
   ->npm install
   ->ng serve
 
-  ->git branch * master
-  -> git fetch
-  -> git checkout
+
+5) pull Request
+  -> Create pull Request
+  -> approve
+  -> merge(if any conflicts clear conflicts and merge)
+
+
+6) clearing conflicts
+   -> git branch
+   -> pull from parent branch
+   -> clear conflicts
+   -> pullrequest for merge
+
+7) git log
+
+8) shift branches
+   -> commit and shift
+   -> git stash --include-untracked
+   -> move to branch and do changes
+   -> after come back (use this-git stash pop)
+
+9) Delete commit from branch
+   -> git log - hgv2cgf353 kjh77687
+   -> git reset kjh77687(delete)
+
+10) two branches code into one branch
+    -> create 3rd branch
+    -> git pull origin feature/one
+    -> git pull origin feature/two
+
+11) cherry-pick
+    -> commit code
+    -> shift to new branch
+    -> git cherry-Pick kjh77687
+
+
 
 
 
