@@ -39,6 +39,10 @@ import { CapitalDirective } from './capital.directive';
 import { RupeePipe } from './rupee.pipe';
 import { AuthInterceptor } from './auth.interceptor';
 import { HooksComponent } from './hooks/hooks.component';
+import { StoreModule } from '@ngrx/store';
+import { AdminComponent } from './admin/admin.component';
+import { UserComponent } from './user/user.component';
+import { countReducer } from './store/counter.reducer';
 
 @NgModule({
   declarations: [
@@ -75,6 +79,8 @@ import { HooksComponent } from './hooks/hooks.component';
     CapitalDirective,
     RupeePipe,
     HooksComponent,
+    AdminComponent,
+    UserComponent,
   ],
   imports: [
     BrowserModule,
@@ -82,7 +88,8 @@ import { HooksComponent } from './hooks/hooks.component';
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    AboutUsModule
+    AboutUsModule,
+    StoreModule.forRoot({counter:countReducer}, {})
   ],
   providers: [
     {
