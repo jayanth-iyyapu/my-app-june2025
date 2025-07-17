@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -13,11 +14,11 @@ export class VehiclesService {
   apiUrl:string="https://6128991386a213001729f9df.mockapi.io/test/v1/jurisdiction";
 
   getVehicles():Observable<any>{
-    return this._httpClient.get(this.apiUrl);
+    return this._httpClient.get(Environment.vehiclesApi);
   }
  
    getVehicle(id:number):Observable<any>{
-    return this._httpClient.get(this.apiUrl+"/"+id);
+    return this._httpClient.get(`${Environment.vehiclesApi}/${id}`); //for dynamic use bactics and mention in {}
   }
 
 
