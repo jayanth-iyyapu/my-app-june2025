@@ -67,6 +67,9 @@ Git:
   ->npm install
   ->ng serve
 
+*) To uninstall Use:
+   ->npm uninstall -g @angular/cli
+
 
 5) pull Request
   -> Create pull Request
@@ -193,3 +196,37 @@ customs:
  
 6) Custom Command----->altering the names in package.json to run the serve
 7) Interceptor----->ng generate interceptor auth
+
+
+
+RxJs Operators:
+===============
+1) from, of -->creational operators
+2) pipi --> combine the value
+3) map --> to alter certain data
+4) filter --> to select certain data
+
+return this.http.get(API)--API call
+
+forkJoin --> parallel API calls
+retun forkJoin(
+   this.http.get(API1)
+   this.http.get(API2)
+   this.http.get(API3)
+   this.http.get(API4)
+)
+
+
+concatMap --> sequential API calls
+retun concatMap(
+   this.http.get(API1)
+   this.http.get(API2)
+   this.http.get(API3)
+   this.http.get(API4)
+)
+
+
+switchMap -->switch between API calls(it calls new API call)
+exhaustMap -->switch between API calls(it rejects new API call)
+debouncetime --> delay API calls
+

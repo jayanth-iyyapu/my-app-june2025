@@ -43,6 +43,9 @@ import { StoreModule } from '@ngrx/store';
 import { AdminComponent } from './admin/admin.component';
 import { UserComponent } from './user/user.component';
 import { countReducer } from './store/counter.reducer';
+import { HeaderComponent } from './header/header.component';
+import { ContentComponent } from './content/content.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -81,6 +84,9 @@ import { countReducer } from './store/counter.reducer';
     HooksComponent,
     AdminComponent,
     UserComponent,
+    HeaderComponent,
+    ContentComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
